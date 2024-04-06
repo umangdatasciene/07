@@ -19,7 +19,7 @@ class Client:
         self._signer = PKCS1_v1_5.new(self._private_key)
 
     @property
-    def indentity(self):
+    def identity(self):
          return binascii.hexlify(self._public_key.exportKey("DER")).decode("ascii")
 
 class Transaction:
